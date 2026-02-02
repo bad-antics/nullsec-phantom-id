@@ -1,0 +1,19 @@
+[package]
+name = "nullsec-phantom-id"
+version = "1.0.0"
+edition = "2021"
+authors = ["bad-antics <bad-antics@users.noreply.github.com>"]
+description = "Device identity spoofing and evasion framework"
+license = "GPL-3.0"
+repository = "https://github.com/bad-antics/nullsec-phantom-id"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.35", features = ["full"] }
+tokio-serial = "5.4"
+colored = "2.1"
+rand = "0.8"
+hex = "0.4"
+regex = "1.10"
